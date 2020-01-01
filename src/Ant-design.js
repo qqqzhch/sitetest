@@ -6,7 +6,8 @@ import {
     Menu,
     Icon,
     Card,
-    Layout
+    Layout,
+    Dropdown
   } from 'ant-design-vue';
 
 
@@ -27,4 +28,8 @@ export default function(Vue){
     Vue.use(Card);
     console.log(Layout)
     Vue.use(Layout);
+
+
+    Vue.use(Dropdown);
+    
 }

@@ -8,7 +8,9 @@
 
   <a-row>
     <a-col :xs="2" :sm="4" :md="6" :lg="8" :xl="10">
-          <a-button type="primary">Primary</a-button>
+          <a-button type="primary">Primary
+            <a-icon type="arrow-right" />
+          </a-button>
     <a-button>Default</a-button>
     <a-button type="dashed">Dashed</a-button>
     <a-button type="danger">Danger</a-button>
@@ -24,7 +26,22 @@
   <div style="margin-left: 10px;margin-top: 10px;">
     <a-card  style="width: 300px">
      
-      <p>card content</p>
+      <p>
+          <a-dropdown>
+    <a class="ant-dropdown-link" href="#"> Hover me <a-icon type="down" /> </a>
+    <a-menu slot="overlay">
+      <a-menu-item>
+        <a href="javascript:;">1st menu item</a>
+      </a-menu-item>
+      <a-menu-item>
+        <a href="javascript:;">2nd menu item</a>
+      </a-menu-item>
+      <a-menu-item>
+        <a href="javascript:;">3rd menu item</a>
+      </a-menu-item>
+    </a-menu>
+  </a-dropdown>
+      </p>
       <p>card content</p>
       <p>card content</p>
     </a-card>
